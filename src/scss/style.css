@@ -506,5 +506,13 @@ body {
     align-self: end;
   }
 }
+@media screen and (min-width: 768px) {
+  .price__container {
+    display: flex;
+  }
+  .price__table {
+    background: #FFFFFF;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
