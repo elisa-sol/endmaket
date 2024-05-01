@@ -1,4 +1,4 @@
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) {
   .upperMenu {
     display: flex;
     justify-content: space-around;
@@ -12,19 +12,24 @@
     padding-left: 25px;
     padding-right: 25px;
     gap: 15px;
-  }
 
-  .upperMenu__divider {
-    margin-right: auto;
-    padding-left: 15px;
-  }
+    &__divider2 {
+      margin-right: auto;
+      padding-left: 15px;
+    }
 
-  .hidden {
-    display: none;
+    &__call,
+    &__chat,
+    &__profile,
+    &__divider,
+    &__repair2,
+    &__checkStatus2 {
+      display: none;
+    }
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1119px) {
+@media screen and (min-width: 768px) {
 
   .upperMenu {
     display: flex;
@@ -32,59 +37,37 @@
     align-items: center;
     min-height: 88px;
     min-width: 100%;
-    background:white;
+    background: white;
     margin: 0;
+    column-gap: 25px;
     border-bottom: 1px solid rgb(217, 255, 245);
-  }
 
-  .upperMenu__call {
-    margin-left: auto;
-    padding-right: 10px;
-  }
+    &__group {
+      margin-right: auto;
+    }
 
-  .upperMenu__burger {
-    padding-left: 20px;
-    padding-right: 10px;
-  }
+    &__divider2 {
+      margin: 0;
+    }
 
-  .upperMenu__divider,
-  .upperMenu__group,
-  .upperMenu__chat,
-  .upperMenu__profile,
-  .upperMenu__repair {
-    padding-right: 10px;
-  }
+    &__call,
+    &__divider,
+    &__group,
+    &__chat,
+    &__profile,
+    &__repair {
+      display: block;
+    }
 
-  .upperMenu__checkStatus {
-    padding-right: 20px;
-  }
-
-  .upperMenu__repair2,
-  .upperMenu__checkStatus2 {
-    display: none;
+    &__repair2,
+    &__checkStatus2 {
+      display: none;
+    }
   }
 }
 
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1440px) {
   .upperMenu {
     display: none;
-  }
-
-  .upperMenu__repair2,
-  .upperMenu__checkStatus2 {
-    padding-top: 5px;
-    padding-right: 25px;
-  }
-
-  .upperMenu__repair2::before {
-    content: "Оставить заявку";
-    position: relative;
-    top: -15px;
-  }
-
-  .upperMenu__checkStatus2::before {
-    content: "Статус ремонта";
-    position: relative;
-    top: -15px;
   }
 }

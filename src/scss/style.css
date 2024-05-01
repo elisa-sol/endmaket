@@ -72,13 +72,26 @@ body {
   background: rgb(255, 255, 255);
 }
 
-@media screen and (min-width: 1120px) {
+.down {
+  margin: 10px;
+}
+
+.up {
+  display: none;
+}
+
+.buttonBlock__show-all-button {
+  border: none;
+  background: #F8F8F8;
+}
+
+@media screen and (min-width: 1440px) {
   body {
-    max-width: 1120px;
+    max-width: 1440px;
     margin: 0 auto;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) {
   .upperMenu {
     display: flex;
     justify-content: space-around;
@@ -93,15 +106,15 @@ body {
     padding-right: 25px;
     gap: 15px;
   }
-  .upperMenu__divider {
+  .upperMenu__divider2 {
     margin-right: auto;
     padding-left: 15px;
   }
-  .hidden {
+  .upperMenu__call, .upperMenu__chat, .upperMenu__profile, .upperMenu__divider, .upperMenu__repair2, .upperMenu__checkStatus2 {
     display: none;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1119px) {
+@media screen and (min-width: 768px) {
   .upperMenu {
     display: flex;
     justify-content: space-around;
@@ -110,52 +123,31 @@ body {
     min-width: 100%;
     background: white;
     margin: 0;
+    column-gap: 25px;
     border-bottom: 1px solid rgb(217, 255, 245);
   }
-  .upperMenu__call {
-    margin-left: auto;
-    padding-right: 10px;
+  .upperMenu__group {
+    margin-right: auto;
   }
-  .upperMenu__burger {
-    padding-left: 20px;
-    padding-right: 10px;
+  .upperMenu__divider2 {
+    margin: 0;
   }
-  .upperMenu__divider,
-  .upperMenu__group,
-  .upperMenu__chat,
-  .upperMenu__profile,
-  .upperMenu__repair {
-    padding-right: 10px;
+  .upperMenu__call, .upperMenu__divider, .upperMenu__group, .upperMenu__chat, .upperMenu__profile, .upperMenu__repair {
+    display: block;
   }
-  .upperMenu__checkStatus {
-    padding-right: 20px;
-  }
-  .upperMenu__repair2,
-  .upperMenu__checkStatus2 {
+  .upperMenu__repair2, .upperMenu__checkStatus2 {
     display: none;
   }
 }
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1440px) {
   .upperMenu {
     display: none;
   }
-  .upperMenu__repair2,
-  .upperMenu__checkStatus2 {
-    padding-top: 5px;
-    padding-right: 25px;
-  }
-  .upperMenu__repair2::before {
-    content: "Оставить заявку";
-    position: relative;
-    top: -15px;
-  }
-  .upperMenu__checkStatus2::before {
-    content: "Статус ремонта";
-    position: relative;
-    top: -15px;
-  }
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) {
+  .mainBlock {
+    min-width: 100%;
+  }
   .mainBlock__text {
     font-family: "TT Lakes", sans-serif;
     font-weight: normal;
@@ -171,23 +163,16 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    column-gap: 10px;
     margin: 20px;
   }
-  .mainBlock {
-    min-width: 100%;
-  }
-  img {
+  .mainBlock__cps {
     width: 100%;
-    height: 100%;
+    height: auto;
     margin-top: 0;
     margin-right: 0;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1119px) {
-  .mainBlock__text2 {
-    display: none;
-  }
+@media screen and (min-width: 768px) {
   .mainBlock {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -203,21 +188,29 @@ body {
     line-height: 18px;
     letter-spacing: 0.2px;
     text-align: left;
-    margin: 20px;
+    align-self: center;
+    margin-bottom: 0;
     grid-area: text;
   }
   .mainBlock__expand {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    column-gap: 10px;
     align-self: start;
     margin-left: 25px;
     grid-area: reading;
+    margin-top: 0;
   }
-  img {
+  .mainBlock .down {
+    margin: 10px;
+  }
+  .mainBlock .up {
+    display: none;
+  }
+  .mainBlock__cps {
     width: 100%;
-    height: 100%;
+    height: auto;
+    border-radius: 2%;
     top: 256px;
     left: 384px;
     margin-top: 20px;
@@ -226,7 +219,7 @@ body {
     grid-area: pic;
   }
 }
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1440px) {
   .mainBlock {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -250,7 +243,7 @@ body {
     margin: 5px 15px;
     grid-area: reading;
   }
-  img {
+  .mainBlock__cps {
     width: 531.35px;
     height: 307px;
     top: 179px;
@@ -259,10 +252,11 @@ body {
     margin-bottom: 20px;
     margin-right: 20px;
     align-self: center;
+    justify-self: center;
     grid-area: pic;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) {
   .slideMenu {
     min-width: 246px;
     max-height: 40px;
@@ -274,7 +268,7 @@ body {
     display: none;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1119px) {
+@media screen and (min-width: 768px) {
   .slideMenu {
     min-width: 246px;
     max-height: 40px;
@@ -288,7 +282,7 @@ body {
     display: none;
   }
 }
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1440px) {
   .slideMenu {
     min-width: 246px;
     max-height: 40px;
@@ -298,10 +292,26 @@ body {
     padding-right: 10px;
   }
 }
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1440px) {
   .title__text {
     margin-left: 20px;
     margin-right: auto;
+  }
+  .upperMenu__repair2,
+  .upperMenu__checkStatus2 {
+    display: block;
+    padding-top: 5px;
+    padding-right: 25px;
+  }
+  .upperMenu__repair2::before {
+    content: "Оставить заявку";
+    position: relative;
+    top: -15px;
+  }
+  .upperMenu__checkStatus2::before {
+    content: "Статус ремонта";
+    position: relative;
+    top: -15px;
   }
 }
 

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CPS</title>
-    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="./scss/style.css">
+    <link rel="stylesheet" href="fonts/TTLakes/stylesheet.css" />
   </head>
   <body>
 
@@ -16,7 +17,7 @@
       <img src="/src/img/svg/burger.svg" alt="burger">
     </div>
 
-    <div class="upperMenu__divider hidden">
+    <div class="upperMenu__divider">
       <img src="/src/img/svg/divider.svg" alt="divider">
     </div>
 
@@ -24,28 +25,24 @@
       <img src="/src/img/svg/group.svg" alt="group">
     </div>
 
-    <div class="upperMenu__call hidden">
+    <div class="upperMenu__call">
       <img src="/src/img/svg/call.svg" alt="call">
     </div>
 
-    <div class="upperMenu__chat hidden">
+    <div class="upperMenu__chat">
       <img src="/src/img/svg/chat.svg" alt="chat">
     </div>
 
-    <div class="upperMenu__profile hidden">
+    <div class="upperMenu__profile">
       <img src="/src/img/svg/profile.svg" alt="profile">
     </div>
 
-    <div class="upperMenu__divider">
-      <div class="upperMenu__divider hidden">
+    <div class="upperMenu__divider2">
         <img src="/src/img/svg/divider.svg" alt="divider">
-      </div>
     </div>
 
     <div class="upperMenu__repair">
-      <div class="upperMenu__divider hidden">
         <img src="/src/img/svg/repair.svg" alt="repair">
-      </div>
     </div>
 
     <div class="upperMenu__checkStatus">
@@ -64,14 +61,14 @@
 
     <div class="title__text">Услуги и сервисы</div>
 
-<!--    <div class="upperMenu__repair2 hidden">-->
-<!--      <img src="/src/img/svg/repair.svg" alt="repair">-->
-<!--    </div>-->
+    <div class="upperMenu__repair2">
+      <img src="/src/img/svg/repair.svg" alt="repair">
+    </div>
 
 
-<!--    <div class="upperMenu__checkStatus2 hidden">-->
-<!--      <img src="/src/img/svg/checkstatus.svg" alt="check status">-->
-<!--    </div>-->
+    <div class="upperMenu__checkStatus2">
+      <img src="/src/img/svg/checkstatus.svg" alt="check status">
+    </div>
 
   </div>
 
@@ -90,20 +87,19 @@
   <div class="mainBlock">
     <div class="mainBlock__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
       Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br>
-
-      <span class="hidden"><br>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера <span class="mainBlock__text2">, что подтверждает большое
+      <br>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
         количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь,
-            советуют нас родным и близким.</span></span>
+            советуют нас родным и близким.
 
     </div>
 
     <div class="mainBlock__expand">
-      <img src="/src/img/svg/down.svg" alt="down arrow"> Читать далее
+        <img src="/src/img/svg/down.svg" alt="down"> <img class="up" src="/src/img/svg/up.svg" alt="up">
+        <button type="button" class="buttonBlock__show-all-button">Читать далее</button>
+      </div>
 
 
-    </div>
-
-    <img alt="Эмблема CPS" src="/src/img/png/cps.png"/>
+    <img class="mainBlock__cps" src="/src/img/png/cps.png" alt="Эмблема CPS">
   </div>
 
 </main>
