@@ -49,3 +49,10 @@ body {
   border-radius: 6px;
   background: rgb(255, 255, 255);
 }
+
+@media screen and (min-width: 1120px) {
+  body {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+}

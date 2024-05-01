@@ -72,6 +72,12 @@ body {
   background: rgb(255, 255, 255);
 }
 
+@media screen and (min-width: 1120px) {
+  body {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+}
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .upperMenu {
     display: flex;
@@ -93,43 +99,6 @@ body {
   }
   .hidden {
     display: none;
-  }
-  .slideMenu {
-    min-width: 246px;
-    max-height: 40px;
-    margin-left: 20px;
-    overflow: scroll hidden;
-    white-space: nowrap;
-  }
-  .slideMenu::-webkit-scrollbar {
-    display: none;
-  }
-  .mainBlock__text {
-    font-family: "TT Lakes", sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    color: #1B1C21;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: 0.2px;
-    text-align: left;
-    margin: 20px;
-  }
-  .mainBlock__expand {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    column-gap: 10px;
-    margin: 20px;
-  }
-  .mainBlock {
-    min-width: 100%;
-  }
-  img {
-    width: 100%;
-    height: 100%;
-    margin-top: 0;
-    margin-right: 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1119px) {
@@ -162,20 +131,61 @@ body {
     padding-right: 20px;
   }
   .upperMenu__repair2,
-  .upperMenu__checkStatus2,
-  .mainBlock__text2 {
+  .upperMenu__checkStatus2 {
     display: none;
   }
-  .slideMenu {
-    min-width: 246px;
-    max-height: 40px;
-    overflow: scroll;
-    white-space: nowrap;
+}
+@media screen and (min-width: 1120px) {
+  .upperMenu {
+    display: none;
   }
-  .slideMenu__button {
-    margin-left: 20px;
+  .upperMenu__repair2,
+  .upperMenu__checkStatus2 {
+    padding-top: 5px;
+    padding-right: 25px;
   }
-  .slideMenu::-webkit-scrollbar {
+  .upperMenu__repair2::before {
+    content: "Оставить заявку";
+    position: relative;
+    top: -15px;
+  }
+  .upperMenu__checkStatus2::before {
+    content: "Статус ремонта";
+    position: relative;
+    top: -15px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .mainBlock__text {
+    font-family: "TT Lakes", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #1B1C21;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    margin: 20px;
+  }
+  .mainBlock__expand {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 10px;
+    margin: 20px;
+  }
+  .mainBlock {
+    min-width: 100%;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1119px) {
+  .mainBlock__text2 {
     display: none;
   }
   .mainBlock {
@@ -217,40 +227,6 @@ body {
   }
 }
 @media screen and (min-width: 1120px) {
-  body {
-    max-width: 1120px;
-    margin: 0 auto;
-  }
-  .upperMenu {
-    display: none;
-  }
-  .title__text {
-    margin-left: 20px;
-    margin-right: auto;
-  }
-  .upperMenu__repair2,
-  .upperMenu__checkStatus2 {
-    padding-top: 5px;
-    padding-right: 25px;
-  }
-  .upperMenu__repair2::before {
-    content: "Оставить заявку";
-    position: relative;
-    top: -15px;
-  }
-  .upperMenu__checkStatus2::before {
-    content: "Статус ремонта";
-    position: relative;
-    top: -15px;
-  }
-  .slideMenu {
-    min-width: 246px;
-    max-height: 40px;
-  }
-  .slideMenu__button {
-    margin-left: 20px;
-    padding-right: 10px;
-  }
   .mainBlock {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -284,6 +260,48 @@ body {
     margin-right: 20px;
     align-self: center;
     grid-area: pic;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .slideMenu {
+    min-width: 246px;
+    max-height: 40px;
+    margin-left: 20px;
+    overflow: scroll hidden;
+    white-space: nowrap;
+  }
+  .slideMenu::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1119px) {
+  .slideMenu {
+    min-width: 246px;
+    max-height: 40px;
+    overflow: scroll;
+    white-space: nowrap;
+  }
+  .slideMenu__button {
+    margin-left: 20px;
+  }
+  .slideMenu::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .slideMenu {
+    min-width: 246px;
+    max-height: 40px;
+  }
+  .slideMenu__button {
+    margin-left: 20px;
+    padding-right: 10px;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .title__text {
+    margin-left: 20px;
+    margin-right: auto;
   }
 }
 

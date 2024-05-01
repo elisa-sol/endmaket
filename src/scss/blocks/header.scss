@@ -1,5 +1,4 @@
 @media screen and (min-width: 320px) and (max-width: 768px) {
-
   .upperMenu {
     display: flex;
     justify-content: space-around;
@@ -22,49 +21,6 @@
 
   .hidden {
     display: none;
-  }
-
-  .slideMenu {
-    min-width: 246px;
-    max-height: 40px;
-    margin-left: 20px;
-    overflow: scroll hidden;
-    white-space: nowrap;
-  }
-
-  .slideMenu::-webkit-scrollbar {
-    display: none;
-  }
-
-  .mainBlock__text {
-    font-family: "TT Lakes", sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    color: #1B1C21;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: 0.2px;
-    text-align: left;
-    margin: 20px;
-  }
-
-  .mainBlock__expand {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    column-gap: 10px;
-    margin: 20px;
-  }
-
-  .mainBlock {
-    min-width: 100%;
-  }
-
-  img {
-    width: 100%;
-    height: 100%;
-    margin-top: 0;
-    margin-right: 0;
   }
 }
 
@@ -104,82 +60,14 @@
   }
 
   .upperMenu__repair2,
-  .upperMenu__checkStatus2,
-  .mainBlock__text2 {
+  .upperMenu__checkStatus2 {
     display: none;
-  }
-
-  .slideMenu {
-    min-width: 246px;
-    max-height: 40px;
-    overflow: scroll;
-    white-space: nowrap;
-  }
-
-  .slideMenu__button {
-    margin-left: 20px;
-  }
-
-  .slideMenu::-webkit-scrollbar {
-    display: none;
-  }
-
-  .mainBlock {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "text pic"
-                             "reading pic";
-    column-gap: 35px;
-  }
-
-  .mainBlock__text {
-    font-family: "TT Lakes", sans-serif;
-    font-weight: normal;
-    color: rgb(27, 28, 33);
-    font-style: normal;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: 0.2px;
-    text-align: left;
-    margin: 20px;
-    grid-area: text;
-  }
-
-  .mainBlock__expand {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    column-gap: 10px;
-    align-self: start;
-    margin-left: 25px;
-    grid-area: reading;
-  }
-
-  img {
-    width: 100%;
-    height: 100%;
-    top: 256px;
-    left: 384px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    align-self: center;
-    grid-area: pic;
   }
 }
 
 @media screen and (min-width: 1120px) {
-  body {
-    max-width: 1120px;
-    margin: 0 auto;
-  }
-
   .upperMenu {
     display: none;
-  }
-
-  .title__text {
-    margin-left: 20px;
-    margin-right: auto;
   }
 
   .upperMenu__repair2,
@@ -198,54 +86,5 @@
     content: "Статус ремонта";
     position: relative;
     top: -15px;
-  }
-
-  .slideMenu {
-    min-width: 246px;
-    max-height: 40px;
-  }
-
-  .slideMenu__button {
-    margin-left: 20px;
-    padding-right: 10px;
-  }
-
-  .mainBlock {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "text pic"
-                             "reading pic";
-    column-gap: 35px;
-  }
-
-  .mainBlock__text {
-    font-family: "TT Lakes", sans-serif;
-    font-weight: normal;
-    color: rgb(27, 28, 33);
-    font-style: normal;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: 0.2px;
-    text-align: left;
-    margin: 50px 30px 5px;
-    grid-area: text;
-  }
-
-  .mainBlock__expand {
-    align-self: start;
-    margin: 5px 15px;
-    grid-area: reading;
-  }
-
-  img {
-    width: 531.35px;
-    height: 307px;
-    top: 179px;
-    left: 561px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    align-self: center;
-    grid-area: pic;
   }
 }
