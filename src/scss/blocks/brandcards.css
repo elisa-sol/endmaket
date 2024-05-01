@@ -1,0 +1,146 @@
+html, body {
+  font-size: 100%;
+  font-family: "TT Lakes", sans-serif;
+  color: black;
+  margin: 0;
+  padding: 0;
+  background: #F8F8F8;
+}
+
+.brandCards__header {
+  min-width: 100%;
+  height: auto;
+  background-image: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+  border-top: 1px solid rgb(217, 255, 245);
+  margin-bottom: 15px;
+  padding: 15px;
+  color: #7E7E82;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.200000003px;
+  text-align: left;
+}
+
+.brand__company {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.image {
+  margin-right: auto;
+  padding-left: 15px;
+}
+
+.button {
+  padding: 15px;
+}
+
+.down {
+  margin: 10px;
+}
+
+.up {
+  display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .mainMenu {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 0;
+    padding: 0;
+  }
+  .swiper {
+    position: relative;
+    overflow: hidden;
+  }
+  .swiper-gradient {
+    position: fixed;
+    top: 87px;
+    right: 0;
+    height: 81px;
+    width: 24px;
+    background-image: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    z-index: 1;
+  }
+  .swiper-slide {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-around;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .swiper-pagination {
+    position: relative;
+    margin-top: 20px;
+  }
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    border-radius: 50%;
+    background-color: #DDDDDD;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #B5B6BC;
+  }
+  .buttonBlock {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1119px) {
+  .swiper {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .brand {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 25px;
+  }
+  .buttonBlock {
+    display: flex;
+    column-gap: 1px;
+  }
+  .buttonBlock__show-all-button {
+    font-family: "TT Lakes", sans-serif;
+    color: black;
+    border: none;
+    background: #F8F8F8;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .swiper {
+    margin-left: 25px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+  .brand {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px 25px;
+  }
+  .buttonBlock {
+    display: flex;
+    column-gap: 1px;
+  }
+  .buttonBlock__show-all-button {
+    font-family: "TT Lakes", sans-serif;
+    color: black;
+    border: none;
+    background: #F8F8F8;
+  }
+}
+
+/*# sourceMappingURL=brandcards.css.map */

@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CPS</title>
+    <link rel="stylesheet" href="src/js/scripts/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="src/scss/style.css">
-    <link rel="stylesheet" href="src/fonts/TTLakes/stylesheet.css" />
+    <link rel="stylesheet" href="src/fonts/TTLakes/stylesheet.css"/>
   </head>
   <body>
 
@@ -102,7 +103,71 @@
     <img class="mainBlock__cps" src="./src/img/png/cps.png" alt="Эмблема CPS">
   </div>
 
-</main>
+  <section class="brandCards">
+  <div class="brandCards__header">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</div>
+<!--  <main class="mainMenu">-->
+
+    <div class="swiper">
+      <div class="swiper-wrapper brand">
+        <div class="swiper-slide brand__company">
+          <img class="image" src="src/img/svg/lenovo.svg" alt="Lenovo">
+          <div class="button"><img src="src/img/svg/button.svg" alt="Button"></div>
+        </div>
+
+        <div class="swiper-slide brand__company">
+          <img class="image" src="src/img/svg/samsung.svg" alt="Samsung">
+          <div class="button"><img src="src/img/svg/button.svg" alt="Button"></div>
+        </div>
+
+        <div class="swiper-slide brand__company">
+          <img class="image" src="./src/img/svg/apple.svg" alt="Apple">
+          <div class="button"><img src="./src/img/svg/button.svg" alt="Button"></div>
+        </div>
+
+        <div class="swiper-slide brand__company">
+          <img class="image" src="./src/img/svg/bosch.svg" alt="Bosch">
+          <div class="button"><img src="./src/img/svg/button.svg" alt="Button"></div>
+        </div>
+
+        <div class="swiper-slide brand__company">
+          <img class="image" src="./src/img/svg/hp.svg" alt="hp">
+          <div class="button"><img src="./src/img/svg/button.svg" alt="Button"></div>
+        </div>
+
+        <div class="swiper-slide brand__company">
+          <img class="image" src="./src/img/svg/acer.svg" alt="acer">
+          <div class="button"><img src="./src/img/svg/button.svg" alt="Button"></div>
+        </div>
+
+        <div class="swiper-slide brand__company">
+          <img class="image" src="./src/img/svg/viewsonic.svg" alt="View Sonic">
+          <div class="button"><img src="./src/img/svg/button.svg" alt="Button"></div>
+        </div>
+
+        <div class="swiper-slide brand__company">
+          <img class="image" src="./src/img/svg/sony.svg" alt="Sony">
+          <div class="button"><img src="./src/img/svg/button.svg" alt="Button"></div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+    </div>
+
+    <div class="swiper-gradient"></div>
+
+    <div class="buttonBlock">
+      <img class="down" src="src/img/svg/down.svg" alt="down"> <img class="up" src="src/img/svg/down.svg" alt="up">
+      <button type="button" class="buttonBlock__show-all-button">Показать все</button>
+    </div>
+
+  </section>
+  </main>
+
+  <script src="./src/js/scripts/swiper/swiper-bundle.min.js"></script>
+  <script type="module" src="./src/js/index.js"></script>
+<!--  <script type="module" src="./src/js/scripts/slider.js"></script>-->
+
 
   </body>
 </html>
