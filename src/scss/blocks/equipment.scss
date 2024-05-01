@@ -49,36 +49,28 @@
   .equipRepair__container {
     margin-right: 15px;
     margin-left: 15px;
-    padding: 0;
   }
 
   .equipRepair__equipment {
     display: flex;
+    box-sizing: border-box;
     align-items: center;
-    justify-content: flex-start;
     background-color: #fff;
     border: 1px solid #eaeaea;
     border-radius: 6px;
-    //min-height: 160px;
+    min-height: 160px;
     gap: 0;
-    padding: 0;
-    //display: flex;
-    //flex-grow: 1;
-    //justify-content: space-around;
-    //background: #FFFFFF;
-    //border: 1px solid #EAEAEA;
-    //border-radius: 6px;
-    //box-sizing: border-box;
-    //width: 100%;
   }
 
   .equipRepair__text {
+    padding: 10px;
     align-self: flex-start;
-    margin-left: -15px;
   }
 
   .equipRepair__button {
-    //padding: 15px;
+    padding-right: 10px;
+    padding-left: 0;
+    margin-left: auto;
     align-self: end;
   }
 }
