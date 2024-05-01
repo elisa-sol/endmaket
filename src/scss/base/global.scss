@@ -63,6 +63,34 @@ body {
   background: #F8F8F8;
 }
 
+.brand__company {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.image {
+  margin-right: auto;
+  padding-left: 15px;
+}
+
+.button {
+  padding: 15px;
+}
+
+.down {
+  margin: 10px;
+}
+
+.up {
+  display: none;
+}
+
 @media screen and (min-width: 1440px) {
   body {
     max-width: 1440px;

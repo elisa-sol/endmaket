@@ -85,6 +85,34 @@ body {
   background: #F8F8F8;
 }
 
+.brand__company {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.image {
+  margin-right: auto;
+  padding-left: 15px;
+}
+
+.button {
+  padding: 15px;
+}
+
+.down {
+  margin: 10px;
+}
+
+.up {
+  display: none;
+}
+
 @media screen and (min-width: 1440px) {
   body {
     max-width: 1440px;
@@ -314,65 +342,7 @@ body {
     top: -15px;
   }
 }
-html, body {
-  font-size: 100%;
-  font-family: "TT Lakes", sans-serif;
-  color: black;
-  margin: 0;
-  padding: 0;
-  background: #F8F8F8;
-}
-
-.brandCards__header {
-  min-width: 100%;
-  height: auto;
-  background-image: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
-  border-top: 1px solid rgb(217, 255, 245);
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding: 15px;
-  color: #7E7E82;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.200000003px;
-  text-align: left;
-}
-
-.brand__company {
-  display: flex;
-  flex-grow: 1;
-  justify-content: space-around;
-  background: #FFFFFF;
-  border: 1px solid #EAEAEA;
-  border-radius: 6px;
-  box-sizing: border-box;
-  width: 100%;
-}
-
-.image {
-  margin-right: auto;
-  padding-left: 15px;
-}
-
-.button {
-  padding: 15px;
-}
-
-.down {
-  margin: 10px;
-}
-
-.up {
-  display: none;
-}
-
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .mainMenu {
-    margin-top: 15px;
-    margin-left: 15px;
-    margin-right: 0;
-    padding: 0;
-  }
+@media screen and (min-width: 320px) {
   .swiper {
     position: relative;
     overflow: hidden;
@@ -412,42 +382,26 @@ html, body {
   .swiper-pagination-bullet-active {
     background-color: #B5B6BC;
   }
-  .buttonBlock {
-    display: none;
-  }
 }
-@media screen and (min-width: 768px) and (max-width: 1119px) {
+@media screen and (min-width: 768px) {
   .swiper {
     margin-left: 15px;
     margin-right: 15px;
   }
-  .brand {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px 25px;
-  }
-  .buttonBlock {
-    display: flex;
-    column-gap: 1px;
-  }
-  .buttonBlock__show-all-button {
-    font-family: "TT Lakes", sans-serif;
-    color: black;
-    border: none;
-    background: #F8F8F8;
-  }
 }
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1440px) {
   .swiper {
     margin-left: 25px;
     margin-right: 15px;
     margin-bottom: 15px;
   }
-  .brand {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px 25px;
+}
+@media screen and (min-width: 320px) {
+  .buttonBlock {
+    display: none;
   }
+}
+@media screen and (min-width: 768px) {
   .buttonBlock {
     display: flex;
     column-gap: 1px;
@@ -457,6 +411,97 @@ html, body {
     color: black;
     border: none;
     background: #F8F8F8;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .buttonBlock {
+    display: flex;
+    column-gap: 1px;
+  }
+  .buttonBlock__show-all-button {
+    font-family: "TT Lakes", sans-serif;
+    color: black;
+    border: none;
+    background: #F8F8F8;
+  }
+}
+.title-size {
+  min-width: 100%;
+  height: auto;
+  background-image: linear-gradient(270deg, #FFFFFF 0%, #F8F8F8 98.61%);
+  border-top: 1px solid rgb(217, 255, 245);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 15px;
+  color: #7E7E82;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.200000003px;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .list-size {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 25px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .list-size {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px 25px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .equipRepair__container {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .equipRepair__equipment {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    min-height: 160px;
+    gap: 0;
+  }
+  .equipRepair__text {
+    padding: 10px;
+    align-self: flex-start;
+  }
+  .equipRepair__button {
+    padding-right: 10px;
+    padding-left: 0;
+    margin-left: auto;
+    align-self: end;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .equipRepair__container {
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 0;
+  }
+  .equipRepair__equipment {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    gap: 0;
+    padding: 0;
+  }
+  .equipRepair__text {
+    align-self: flex-start;
+    margin-left: -15px;
+  }
+  .equipRepair__button {
+    align-self: end;
   }
 }
 
