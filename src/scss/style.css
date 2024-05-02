@@ -72,14 +72,6 @@ body {
   background: rgb(255, 255, 255);
 }
 
-.down {
-  margin: 10px;
-}
-
-.up {
-  display: none;
-}
-
 .buttonBlock__show-all-button {
   border: none;
   background: #F8F8F8;
@@ -153,6 +145,7 @@ body {
     margin: 0;
     column-gap: 25px;
     border-bottom: 1px solid rgb(217, 255, 245);
+    box-sizing: border-box;
   }
   .upperMenu__group {
     margin-right: auto;
@@ -438,6 +431,7 @@ body {
   line-height: 24px;
   letter-spacing: -0.200000003px;
   text-align: left;
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: 768px) {
@@ -480,38 +474,89 @@ body {
     align-self: end;
   }
 }
-@media screen and (min-width: 1440px) {
-  .equipRepair__container {
-    margin-right: 15px;
-    margin-left: 15px;
-  }
-  .equipRepair__equipment {
+.price__text {
+  max-width: 520px;
+  margin-left: 25px;
+}
+
+.price__offer {
+  margin: 20px 20px 60px;
+  font-family: "TT Lakes", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.200000003px;
+  font-weight: 500;
+  border: none;
+  background: #F8F8F8;
+  display: flex;
+  column-gap: 1px;
+}
+
+@media screen and (min-width: 768px) {
+  .price__head {
+    list-style: none;
     display: flex;
-    box-sizing: border-box;
+    justify-content: space-around;
     align-items: center;
-    background-color: #fff;
-    border: 1px solid #eaeaea;
-    border-radius: 6px;
-    min-height: 160px;
-    gap: 0;
+    margin: 0;
+    padding: 0;
   }
-  .equipRepair__text {
-    padding: 10px;
-    align-self: flex-start;
+  .price__item {
+    width: 25%;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
   }
-  .equipRepair__button {
-    padding-right: 10px;
-    padding-left: 0;
+  .price__table {
+    margin-right: 20px;
+    margin-left: 20px;
+    background: #FFFFFF;
+    border-radius: 10px;
+  }
+  .price__names {
+    margin-left: 25px;
+    margin-bottom: 15px;
+    color: #7E7E82;
+  }
+  .order {
+    display: flex;
     margin-left: auto;
-    align-self: end;
+  }
+  .separator {
+    width: 95%;
+    transform: translateX(20px);
+  }
+  .separator:last-child {
+    opacity: 0;
+  }
+}
+@media screen and (min-width: 320px) {
+  .footer__container {
+    border-top: 1px solid #D9FFF5;
+  }
+  .footer__item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+    color: #7E7E82;
   }
 }
 @media screen and (min-width: 768px) {
-  .price__container {
+  .footer__container {
     display: flex;
+    align-items: start;
+    border-top: 1px solid #D9FFF5;
   }
-  .price__table {
-    background: #FFFFFF;
+  .footer__item {
+    display: flex;
+    text-align: start;
+    width: 33.3333%;
+    margin: 20px;
+    color: #7E7E82;
+  }
+  .footer__item:last-child {
+    text-align: end;
   }
 }
 

@@ -28,4 +28,5 @@ function swiperCard() {
 }
 
 swiperCard();
+window.addEventListener("resize", swiperCard);
 console.log("2222");

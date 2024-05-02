@@ -41,6 +41,7 @@
     margin: 0;
     column-gap: 25px;
     border-bottom: 1px solid rgb(217, 255, 245);
+    box-sizing: border-box;
 
     &__group {
       margin-right: auto;
